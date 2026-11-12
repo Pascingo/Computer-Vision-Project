@@ -2,7 +2,7 @@
 
 Erkennung von Photovoltaik-Anlagen auf Schweizer Dächern mit Computer Vision, kombiniert mit dem Solarkataster des Bundes. Das Ergebnis ist eine Karte, die pro Dach zeigt, ob es für Solarenergie gut geeignet ist, ob bereits eine Anlage montiert ist und wie viel Potenzial noch frei ist.
 
-Modularbeit Computer Vision, Data Science Studium.
+Modularbeit Computer Vision
 
 ## Idee
 
@@ -19,7 +19,7 @@ Wie zuverlässig erkennt ein von Grund auf trainiertes Modell, das nur auf franz
 1. **Training:** Ein U-Net wird in PyTorch selbst implementiert und ohne Vortraining auf dem französischen Datensatz BDAPPV trainiert.
 2. **Testgemeinden:** Das Modell wird auf zwei Schweizer Gemeinden angewendet:
    - eine kleine Gemeinde in der Waadt Richtung Genf (baulich näher an den französischen Trainingsdaten)
-   - eine ländliche Gemeinde in der Ostschweiz (Thurgau oder St. Gallen)
+   - eine ländliche Gemeinde in der Ostschweiz (Thurgau)
 3. **Evaluation:** Für jede Gemeinde wird ein eigenes Testset von Hand gelabelt. Zusätzlich gleichen wir die Erkennungen mit dem BFE-Anlagenregister ab.
 4. **Verschneidung:** Erkannte Anlagen werden mit den Sonnendach-Dachflächen kombiniert. Belegungsgrad = PV-Fläche / Dachfläche.
 5. **Karte:** Darstellung des freien Potenzials pro gut oder sehr gut geeignetem Dach.
@@ -86,5 +86,5 @@ Python, PyTorch, GeoPandas, Rasterio, Label Studio oder CVAT für die Annotation
 
 ## Team
 
-- Name 1
-- Name 2
+- Timon Reichmuth 
+- Pascal Ingold
