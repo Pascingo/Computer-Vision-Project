@@ -1,0 +1,37 @@
+# Central project configuration.
+# All notebooks and scripts read their settings from here (via src.config.load_config).
+# Paths are relative to the project root.
+
+project:
+  name: solar-rooftop-detection-ch
+  seed: 42
+
+paths:
+  data_raw: data/raw              # downloaded source data (not versioned)
+  data_interim: data/interim      # intermediate products, e.g. clipped/resampled rasters (not versioned)
+  data_processed: data/processed  # model-ready tiles, masks, splits (not versioned)
+  data_labels: data/labels        # our own annotations (versioned)
+  results: results
+  figures: results/figures
+  models: results/models
+  metrics: results/metrics
+  maps: results/maps
+
+geo:
+  crs: "EPSG:2056"                # Swiss LV95, used for all geodata
+
+# Control municipalities for validation.
+# BFS numbers to be verified against swissBOUNDARIES3D in notebook 01.
+municipalities:
+  uznach:
+    name: Uznach
+    canton: SG
+    bfs_nr: 3339
+  pully:
+    name: Pully
+    canton: VD
+    bfs_nr: 5590
+
+compute:
+  device: auto                    # auto -> mps (Apple Silicon) > cuda > cpu
+  num_workers: 4

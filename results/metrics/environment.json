@@ -1,0 +1,19 @@
+{
+  "python": "3.11.9",
+  "platform": "macOS-27.2.1-arm64-arm-64bit",
+  "numpy": "2.4.6",
+  "pandas": "3.0.6",
+  "pyyaml": "6.0.3",
+  "geopandas": "NOT INSTALLED",
+  "shapely": "NOT INSTALLED",
+  "pyproj": "NOT INSTALLED",
+  "rasterio": "NOT INSTALLED",
+  "torch": "2.15.0",
+  "torchvision": "NOT INSTALLED",
+  "scikit-learn": "1.9.1",
+  "pillow": "12.3.0",
+  "matplotlib": "3.11.2",
+  "folium": "NOT INSTALLED",
+  "jupyterlab": "4.6.4",
+  "device": "mps"
+}
